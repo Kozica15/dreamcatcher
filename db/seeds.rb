@@ -1,4 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
+# This file should contain al
+
+
+l the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
@@ -19,3 +22,13 @@
 #   restaurant.save!
 # end
 # puts 'Finished!'
+p "start seeding the first dream"
+dream1:  Dream.create!(
+      t.date :"28/02/2018"
+      t.text :""Onsen Travel House and Film Viewing"
+
+"I came to an old onsen travel house. A lot of people were gathered there watching some film. It [viewing] is required. I blend in with the crowd and watch the film projected in the reception hall. Yoko-chan from my class whispers to me: "There is a blonde person behind us."
+)
+"To myself who became famous"
+
+There are singers posters. One of them is myself. I became famous. In one of the rooms in a large library, general questioners are waiting. As soon as I sit down they ask me "What is the meaning of the lyric ***?"
