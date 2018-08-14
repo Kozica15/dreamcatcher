@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+      <div class="col-xs-6 col-xs-offset-3">
+        <h1>Mon rêve d'aujourd'hui</h1>
+          <%= simple_form_for @dream do |f| %>
+            <%= f.error_notification %>
+            <%= f.input :description %>
+            <%= f.input :created_at %>
+            <%= f.input :updated_at %>
+
+          <% end %>
+          <div/>
+        <div/>
+      <div/>
