@@ -1,0 +1,20 @@
+<h1>Rêves</h1>
+<div class="row">
+    <div class="col-xs-6">
+
+      <% if @dream.description %>
+        <ul>
+          <% @dreams.each do |message| %>
+            <li><%= message %></li>
+            <h5> Date :  <%= @dream.date %></h5>
+          <% end %>
+        </ul>
+      <% end %>
+
+
+
+      <!-- <ul>
+        <li> Description : <%= @dream.description %> </li>
+      </ul> -->
+    </div>
+  </div>
