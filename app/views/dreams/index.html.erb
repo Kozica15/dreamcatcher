@@ -1,0 +1,14 @@
+
+<%= link_to "Retour",root_path , class: "btn btn-primary btn-lg" %>
+
+
+ <% @dreams.each do |dream| %>
+    <tr>
+      <td><%= dream.date %></td>
+      <td><%= dream.description %></td></br>
+      <td><%= dream.date %></td>
+      <td><%= link_to 'Show', dream_path(dream) %></td>
+      <%= link_to 'supprimer', dream_path(dream), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger list-inline" %>
+
+    </tr>
+  <% end %>
