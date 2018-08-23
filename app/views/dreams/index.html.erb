@@ -1,14 +1,21 @@
 
-<%= link_to "Retour",root_path , class: "btn btn-outline-primary btn-lg" %>
+
+<div class="row" >
+  <div class="col-xs-6 col-xs-offset-3" >
+
+    <h1>Rêves</h1>
+      <% @dreams.each do |dream| %>
+    <ul>
+      <li>Le <%= dream.date %></li>
+      <li><%= dream.description %></li>
+
+       <%= link_to 'supprimer', dream_path(dream), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary btn-sm btntous" %>
+       <%= link_to "Mon rêve",new_dream_path , class: "btn btn-primary btn-sm  .disabled" %>
+
+          </ul>
+    <% end %>
+    <%= link_to "Retour",root_path , class: "btn btn-outline-primary btn-sm" %>
+  </div>
+</div>
 
 
- <% @dreams.each do |dream| %>
-    <tr>
-      <td><%= dream.date %></td>
-      <td><%= dream.description %></td></br>
-      <td><%= dream.date %></td>
-      <td><%= link_to 'Show', dream_path(dream) %></td>
-      <%= link_to 'supprimer', dream_path(dream), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger list-inline" %>
-
-    </tr>
-  <% end %>

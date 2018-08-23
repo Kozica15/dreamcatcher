@@ -26,6 +26,9 @@ class DreamsController < ApplicationController
     @dream.destroy
     redirect_to dreams_path
   end
+  def edit
+    @dream = Dream.find(params[:id])
+  end
 
   private
 # ici je définie ce que je vais permettre qu'on envoie dans la variable dream_params
