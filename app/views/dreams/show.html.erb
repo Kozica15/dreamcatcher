@@ -1,11 +1,11 @@
 
-<div class="row" id= dodo>
-  <div class="col-xs-6 col-xs-offset-3" id= dodo>
+<div class="row" >
+  <div class="col-xs-6 col-xs-offset-3" >
     <h1>Rêves</h1>
       <ul>
-        <li> Description : <%= @dream.description %> </li>
-        <li> Date : <%= @dream.date %> </li>
-      </ul> -->
-      <%= link_to 'Index', dreams_path,  class: "btn btn-primary btn-lg" %></td>
+        <li> <%= @dream.description %> </li>
+        <li> Le: <%= @dream.date %> </li>
+      </ul>
+      <%= link_to 'Tous mes rêves', dreams_path,  class: "btn btn-primary btn-lg btntous" %>
   </div>
 </div>
